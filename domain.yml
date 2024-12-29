@@ -1,0 +1,62 @@
+version: '3.1'
+intents:
+- au_revoir
+- confirmer
+- defier_bot
+- demander_assistance
+- demander_contact
+- demander_devis
+- demander_disponibilite
+- demander_prix
+- demander_realisation
+- demander_services
+- demander_superficie
+- demander_temps
+- humeur_bonne
+- humeur_mauvaise
+- refuser
+- saluer
+entities:
+- superficie
+slots:
+  superficie:
+    type: text
+    mappings:
+    - type: from_text
+responses:
+  utter_saluer:
+  - text: Bonjour ! Comment puis-je vous aider aujourd'hui ?
+  utter_au_revoir:
+  - text: Au revoir ! Passez une excellente journée !
+  utter_humeur_bonne:
+  - text: Super de vous entendre si positif ! Que puis-je faire pour vous ?
+  utter_humeur_mauvaise:
+  - text: Je suis désolé de l'entendre. Comment puis-je vous aider ?
+  utter_defier_bot:
+  - text: Je suis un assistant virtuel, ici pour vous aider avec vos projets de construction.
+  utter_demander_contact:
+  - text: Vous pouvez nous contacter au numéro +44 123 456 789 ou par email à contact@ukconstruction.com.
+  utter_demander_realisation:
+  - text: Nous avons réalisé de nombreux projets, vous pouvez les consulter sur notre site ou demander des détails spécifiques.
+  utter_demander_services:
+  - text: Nous proposons des services de construction clé en main, de rénovation et des solutions pour des constructions écologiques.
+  utter_demander_devis:
+  - text: Pour un devis, veuillez préciser vos besoins. Vous pouvez également remplir un formulaire en ligne.
+  utter_demander_temps:
+  - text: La durée dépend de votre projet. Une maison de 150m² prend généralement entre 6 et 9 mois.
+  utter_demander_prix:
+  - text: Le coût varie selon la taille et les spécifications. Une maison de 100m² coûte environ £100,000 en moyenne.
+  utter_demander_assistance:
+  - text: Bien sûr, nous serons ravis de vous aider. Que souhaitez-vous savoir ?
+  utter_demander_superficie:
+  - text: Pouvez-vous me donner la superficie pour que je puisse estimer le prix ?
+actions:
+- action_calcul_temps
+- utter_saluer
+- action_calcul_cout
+- action_demander_details_projet
+- action_calcul_superficie
+- action_demander_superficie
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

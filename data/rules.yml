@@ -1,0 +1,67 @@
+version: "3.1"
+
+rules:
+- rule: Greet the user
+  steps:
+    - intent: saluer
+    - action: utter_saluer
+
+- rule: Say goodbye
+  steps:
+    - intent: au_revoir
+    - action: utter_au_revoir
+
+- rule: Respond to good mood
+  steps:
+    - intent: humeur_bonne
+    - action: utter_humeur_bonne
+
+- rule: Respond to bad mood
+  steps:
+    - intent: humeur_mauvaise
+    - action: utter_humeur_mauvaise
+
+- rule: Handle bot challenge
+  steps:
+    - intent: defier_bot
+    - action: utter_defier_bot
+
+- rule: Provide contact information
+  steps:
+    - intent: demander_contact
+    - action: utter_demander_contact
+
+- rule: Provide details on services
+  steps:
+    - intent: demander_services
+    - action: utter_demander_services
+
+- rule: Respond to assistance request
+  steps:
+    - intent: demander_assistance
+    - action: utter_demander_assistance
+
+- rule: Handle price calculation
+  steps:
+    - intent: demander_prix
+    - action: action_calcul_cout
+
+- rule: Handle time estimation
+  steps:
+    - intent: demander_temps
+    - action: action_calcul_temps
+
+- rule: Provide project examples
+  steps:
+    - intent: demander_realisation
+    - action: utter_demander_realisation
+
+- rule: Handle quote request
+  steps:
+    - intent: demander_devis
+    - action: action_demander_details_projet
+
+- rule: Ask for additional project details
+  steps:
+    - intent: confirmer
+    - action: utter_demander_assistance

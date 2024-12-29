@@ -1,0 +1,133 @@
+version: "3.1"
+
+nlu:
+- intent: saluer
+  examples: |
+    - salut
+    - bonjour
+    - bonsoir
+    - coucou
+    - hey
+    - hello
+    - bon matin
+    - bonne soirée
+    - bon après-midi
+    - salut à toi
+    - bonjour tout le monde
+- intent: au_revoir
+  examples: |
+    - au revoir
+    - à bientôt
+    - à plus tard
+    - bye
+    - bonne journée
+    - bonne nuit
+    - à la prochaine
+    - salut
+    - bye bye
+- intent: confirmer
+  examples: |
+    - oui
+    - bien sûr
+    - absolument
+    - tout à fait
+    - d'accord
+    - c'est correct
+    - ça marche
+- intent: refuser
+  examples: |
+    - non
+    - pas du tout
+    - jamais
+    - je ne crois pas
+    - pas vraiment
+    - non merci
+    - ça ne va pas
+- intent: humeur_bonne
+  examples: |
+    - je vais bien
+    - je suis heureux
+    - tout est parfait
+    - c'est une belle journée
+    - je suis super content
+    - incroyable
+    - je suis au top
+    - tout va bien
+    - tout est génial
+    - je me sens comme un roi
+- intent: humeur_mauvaise
+  examples: |
+    - je suis triste
+    - ça ne va pas
+    - je me sens mal
+    - je suis déçu
+    - ma journée a été horrible
+    - je suis très triste
+    - je suis fatigué
+    - pas content
+    - je ne me sens pas très bien
+- intent: defier_bot
+  examples: |
+    - es-tu un robot ?
+    - es-tu humain ?
+    - est-ce que je parle à un humain ?
+    - est-ce que tu es une machine ?
+    - es-tu réel ?
+- intent: demander_prix
+  examples: |
+    - Quel est le coût de construction d'une maison ?
+    - Combien coûte une maison de [100m²](superficie) ?
+    - Quel est le prix d'un bâtiment de [150m²](superficie) ?
+    - Estimation de coût pour une maison individuelle
+    - Combien cela coûte-t-il pour [200m²](superficie) ?
+- intent: demander_temps
+  examples: |
+    - Combien de temps faut-il pour construire une maison ?
+    - Quelle est la durée moyenne de construction d'un bâtiment ?
+    - En combien de temps pouvez-vous terminer un projet ?
+    - Quel est le délai pour une maison de [150m²](superficie) ?
+    - Combien de temps pour construire un immeuble de bureaux ?
+    - combien de temps faut il pour construire une maison ?
+- intent: demander_services
+  examples: |
+    - Quels services proposez-vous ?
+    - Offrez-vous des services de construction clé en main ?
+    - Faites-vous de la rénovation ?
+    - Quels types de bâtiments construisez-vous ?
+    - Pouvez-vous construire des maisons modernes ?
+    - Avez-vous des solutions pour la construction écologique ?
+- intent: demander_disponibilite
+  examples: |
+    - Êtes-vous disponible pour un projet au Royaume-Uni ?
+    - Avez-vous des équipes disponibles actuellement ?
+    - Puis-je démarrer un projet avec vous ce mois-ci ?
+    - Êtes-vous disponible pour commencer un projet rapidement ?
+    - Pouvez-vous m'envoyer un devis maintenant ?
+- intent: demander_contact
+  examples: |
+    - Comment puis-je vous contacter ?
+    - Quel est votre numéro de téléphone ?
+    - Avez-vous une adresse email ?
+    - Où êtes-vous situé ?
+    - Puis-je vous appeler pour discuter de mon projet ?
+- intent: demander_realisation
+  examples: |
+    - Avez-vous des projets réalisés ?
+    - Pouvez-vous me montrer des exemples de vos travaux ?
+    - Quels sont vos derniers projets ?
+    - Avez-vous des références ou des témoignages ?
+    - Où puis-je voir vos réalisations ?
+- intent: demander_devis
+  examples: |
+    - Pouvez-vous me faire un devis pour une maison ?
+    - Comment obtenir une estimation de coût ?
+    - J'aimerais un devis pour un bâtiment de [150m²](superficie)
+    - Puis-je recevoir une offre pour un projet clé en main ?
+    - Avez-vous une grille tarifaire ?
+- intent: demander_assistance
+  examples: |
+    - J'ai besoin d'aide avec mon projet
+    - Pouvez-vous m'aider à concevoir une maison ?
+    - J'ai une question technique sur un bâtiment
+    - Puis-je obtenir des conseils sur un projet de construction ?
+    - Avez-vous un support technique ?

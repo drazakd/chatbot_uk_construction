@@ -1,0 +1,62 @@
+version: "3.1"
+
+stories:
+- story: Greet and help
+  steps:
+    - intent: saluer
+    - action: utter_saluer
+
+- story: Goodbye
+  steps:
+    - intent: au_revoir
+    - action: utter_au_revoir
+
+- story: Ask for price calculation
+  steps:
+    - intent: demander_prix
+      entities:
+        - superficie: "100"
+    - action: action_calcul_cout
+
+- story: Ask for time estimation
+  steps:
+    - intent: demander_temps
+      entities:
+        - superficie: "150"
+    - action: action_calcul_temps
+
+- story: Ask for contact information
+  steps:
+    - intent: demander_contact
+    - action: utter_demander_contact
+
+- story: Ask for services
+  steps:
+    - intent: demander_services
+    - action: utter_demander_services
+
+- story: Ask for assistance
+  steps:
+    - intent: demander_assistance
+    - action: utter_demander_assistance
+
+
+- story: Demander la superficie et estimer le prix
+  steps:
+    - intent: demander_superficie
+    - action: utter_demander_superficie
+    - intent: demander_superficie
+      entities:
+        - superficie: "150m²"
+    - action: action_calcul_superficie
+
+- story: interactive_story_1
+  steps:
+  - intent: saluer
+  - slot_was_set:
+    - superficie: bonjour
+  - action: utter_saluer
+  - intent: demander_temps
+  - slot_was_set:
+    - superficie: combien de temps faut il pour construire une maison ?
+  - action: action_calcul_temps

@@ -1,0 +1,52 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_contact\"}}]": "utter_demander_contact",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_contact\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_contact\"}, \"user\": {\"intent\": \"demander_contact\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"confirmer\"}}]": "utter_demander_assistance",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"confirmer\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_assistance\"}, \"user\": {\"intent\": \"confirmer\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_services\"}}]": "utter_demander_services",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_services\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_services\"}, \"user\": {\"intent\": \"demander_services\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_prix\"}}]": "action_calcul_cout",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_prix\"}}, {\"prev_action\": {\"action_name\": \"action_calcul_cout\"}, \"user\": {\"intent\": \"demander_prix\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_temps\"}}]": "action_calcul_temps",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_temps\"}}, {\"prev_action\": {\"action_name\": \"action_calcul_temps\"}, \"user\": {\"intent\": \"demander_temps\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_assistance\"}}]": "utter_demander_assistance",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_assistance\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_assistance\"}, \"user\": {\"intent\": \"demander_assistance\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"defier_bot\"}}]": "utter_defier_bot",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"defier_bot\"}}, {\"prev_action\": {\"action_name\": \"utter_defier_bot\"}, \"user\": {\"intent\": \"defier_bot\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_devis\"}}]": "action_demander_details_projet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_devis\"}}, {\"prev_action\": {\"action_name\": \"action_demander_details_projet\"}, \"user\": {\"intent\": \"demander_devis\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saluer\"}}]": "utter_saluer",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saluer\"}}, {\"prev_action\": {\"action_name\": \"utter_saluer\"}, \"user\": {\"intent\": \"saluer\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"humeur_bonne\"}}]": "utter_humeur_bonne",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"humeur_bonne\"}}, {\"prev_action\": {\"action_name\": \"utter_humeur_bonne\"}, \"user\": {\"intent\": \"humeur_bonne\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"au_revoir\"}}]": "utter_au_revoir",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"au_revoir\"}}, {\"prev_action\": {\"action_name\": \"utter_au_revoir\"}, \"user\": {\"intent\": \"au_revoir\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"humeur_mauvaise\"}}]": "utter_humeur_mauvaise",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"humeur_mauvaise\"}}, {\"prev_action\": {\"action_name\": \"utter_humeur_mauvaise\"}, \"user\": {\"intent\": \"humeur_mauvaise\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_realisation\"}}]": "utter_demander_realisation",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_realisation\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_realisation\"}, \"user\": {\"intent\": \"demander_realisation\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"defier_bot\"}}, {\"prev_action\": {\"action_name\": \"utter_defier_bot\"}, \"user\": {\"intent\": \"defier_bot\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"humeur_bonne\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"humeur_mauvaise\"}}, {\"prev_action\": {\"action_name\": \"utter_humeur_mauvaise\"}, \"user\": {\"intent\": \"humeur_mauvaise\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"humeur_bonne\"}}, {\"prev_action\": {\"action_name\": \"utter_humeur_bonne\"}, \"user\": {\"intent\": \"humeur_bonne\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_realisation\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_devis\"}}, {\"prev_action\": {\"action_name\": \"action_demander_details_projet\"}, \"user\": {\"intent\": \"demander_devis\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_realisation\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_realisation\"}, \"user\": {\"intent\": \"demander_realisation\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_devis\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"confirmer\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"confirmer\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_assistance\"}, \"user\": {\"intent\": \"confirmer\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"humeur_mauvaise\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"defier_bot\"}}]",
+      "predicting default action with intent back",
+      "predicting default action with intent restart"
+    ]
+  }
+}
